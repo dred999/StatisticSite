@@ -8,14 +8,47 @@
   <link rel="stylesheet" href="style.css">
 
   <!-- ===== МЕСТО ДЛЯ КОДА СЧЁТЧИКОВ В <head> (Яндекс Метрика, Google Analytics и др.) ===== -->
+<!-- Top100 (Kraken) Counter -->
+<script>
+    (function (w, d, c) {
+    (w[c] = w[c] || []).push(function() {
+        var options = {
+            project: 7752727,
+            element: "top100_widget",
+            attributes_dataset: [ "data-block" ],
+            trackHashes: true,
+            user_id: null,
+        };
+        try {
+            w.top100Counter = new top100(options);
+        } catch(e) { }
+    });
+    var n = d.getElementsByTagName("script")[0],
+    s = d.createElement("script"),
+    f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src =
+    (d.location.protocol == "https:" ? "https:" : "http:") +
+    "//st.top100.ru/top100/top100.js";
 
+    if (w.opera == "[object Opera]") {
+    d.addEventListener("DOMContentLoaded", f, false);
+} else { f(); }
+})(window, document, "_top100q");
+</script>
+<noscript>
+  <img src="//counter.rambler.ru/top100.cnt?pid=7752727" alt="Топ-100" />
+</noscript>
+<!-- END Top100 (Kraken) Counter -->
   <!-- ===== КОНЕЦ МЕСТА ДЛЯ СЧЁТЧИКОВ В <head> ===== -->
+  <script src="events.js" defer></script>
 </head>
 <body>
   <header class="site-header">
     <div class="wrap header-row">
       <a class="brand" href="index.html"><svg class="logo-fish" viewBox="0 0 64 32" aria-hidden="true"><path d="M4 16c8-11 26-13 40-4l12-8-3 12 3 12-12-8C30 29 12 27 4 16z" fill="currentColor"/><circle cx="14" cy="14" r="2" fill="#fff"/></svg><span>Фидер и карп</span></a>
-      <nav class="nav">
+      <nav class="nav" data-block="menu">
         <a href="index.html">Главная</a>
         <a href="mesta.html" class="active">Где ловить</a>
         <a href="snasti.html">Снасти</a>
@@ -80,6 +113,7 @@ alt=""/></a><script>(function(d,s){d.getElementById("licnt0FEE").src=
 (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
 ";h"+escape(d.title.substring(0,150))+";"+Math.random()})
 (document,screen)</script><!--/LiveInternet-->
+        <span id="top100_widget" data-block="footer_top100"></span>
         <!-- ===== КОНЕЦ МЕСТА ДЛЯ СЧЁТЧИКОВ ===== -->
       </div>
     </div>
