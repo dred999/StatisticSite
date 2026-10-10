@@ -39,5 +39,6 @@ h2{font-size:1.3rem;margin:28px 0 8px}
 .footer-row{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;padding-top:24px;padding-bottom:24px}
 .footer-title{font-weight:700;color:#fff;margin:0}
 .site-footer .muted{color:#9fb0a5;margin:4px 0 0;max-width:520px}
+.owner{margin:8px 0 0;color:#e6efe9;font-size:.95rem}
 .counters{display:flex;gap:8px;align-items:center;min-height:31px}
 @media (max-width:640px){.hero{padding:28px 20px}h1{font-size:1.7rem}.spec th,.spec td{padding:8px}}
